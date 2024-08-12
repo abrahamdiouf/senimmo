@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEN'IMMO</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <main>
+    <nav class="navbar navbar-expand-md bg-light navbar-light fs-5 fixed-top">
+      <div class="container">
+        <a href="#accueil" class="navbar-brand ">
+          <img src="media/img perso (3).jpg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item text-dark"><a class="nav-link text-dark" href="#accueil"> <span>Accueil</span></a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#Appartements"> <span>Appartements</span></a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#Services"> <span>Services</span></a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#Information"> <span>Information</span></a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#contact" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span>Contact</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#nouscontacter">NousContacter</a></li>
+                <li><a class="dropdown-item" href="pages/personnels.html">NotreGroupe</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="accueil">
+      <div class="container-fluid">
+
+        <div class="row mt-3 ">
+          <div class="col-md-8 p-3  bg-danger text-white text-center">
+            <div class="text-white">
+              <i class='bx bxs-landmark'></i>
+            </div>
+            <h1 class="text-uppercase">Agence Immobilière</h1>
+            <p class="mt-3">Nous vous proposons des biens d'exceptions de l'immobilier pour satifaire vos besoins.</p>
+            <a href="#nouscontacter" class="btn btn-dark mt-3">En savoir plus</a>
+          </div>
+          <div class="col-md-4 ">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="media/imgA4.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption">
+                    <h5 class="text-white">Your Dream House</h5>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Tempore quis dignissimos nam sunt totam dolor.</p>
+                    <p><a href="#" class="btn btn-danger mt-3 ">Learn More</a></p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="media/imgA1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption">
+                    <h5 class="text-white">Always Dedicated</h5>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore quis dignissimos nam sunt totam dolor.</p>
+                   <p><a href="#" class="btn btn-danger mt-3 ">Learn More</a></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="media/imgA5.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption">
+                    <h5 class="text-white">True Construction</h5>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore quis dignissimos nam sunt totam dolor.</p>
+                   <p><a href="#" class="btn btn-danger mt-3 ">Learn More</a></p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 text-center text-white  p-3 bg-dark">
+            <h1 class="mt-3">Des offres d'exception,à un prix imbattable</h1>
+            <p class="mt-3">Gouter à l'exception</p>
+            <a href="#Appartements" class="btn btn-light mt-3 ">Nos Locaux</a>
+          </div>
+          <div class="col-md-6 border text-center ">
+            <div class="row mt-4">
+              <div class="col-md-7 mt-5 fst-italic ">
+                <h1>Envoyez nous un message</h1>
+              </div>
+              <div class="col-md-5 mt-5">
+                <div>
+                  <a href="#nouscontacter" class="fs-5 text-danger"><i class='bx bxs-chevron-right'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10 text-center mt-5">
+            <h3>Bienvenue sur <span class="text-danger">SEN'IMMO</span>, le premier site d’annonces <span class="text-danger">immobilières au Sénégal.</span></h3>
+            <h5 class="mt-4">SEN'IMMO met à votre disposition un magazine traitant de l’immobilier au Sénégal. 
+                Régulièrement mis à jour, retrouvez nos conseils pratiques à propos de sujets divers et variés tels que l’investissement immobilier, 
+                la construction et meme en cas de besoins d'un promoteur,... tout en respectant les normes juridiques. Que vous souhaitiez acheter, vendre ou louer, vous trouverez toutes les informations nécéssaires ici pour mener à bien votre projet immobilier. 
+                Vous découvrirez également des posts sur les lieux mythiques du Sénégal tels que Saint Louis , Dakar ,Thies et ses différents quartiers ou encore la Petite Côte et ses villages (Saly, Ngaparou, Somone…). 
+            </h5>
+            <a href="pages/commande.html" class="btn btn-danger mt-3">Faire Une Demande</a>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Appartements">
+      <div class="container mt-5">
+        <h2 class="text-center text-danger text-uppercase">Faites votre commande</h2>
+        <div class="row fw-bold mt-5">
+          <div class="col-md-4 border border-dark shadow p-2">
+            <img src="media/image(20).jpg" alt="" class="img-fluid" onclick="openModal('media/image(20).jpg')">
+            <div class="offre text-center mt-3">
+              <a href="pages/commande.html" class="btn btn-danger text-center">Commander</a>
+            </div>
+          </div>
+          <div class="col-md-4 border border-dark shadow p-2">
+            <img src="media/image (23).jpg" alt="" class="img-fluid" onclick="openModal('media/image (23).jpg')">
+            <div class="offre text-center mt-3">
+              <a href="pages/commande.html" class="btn btn-danger">Commander</a>
+            </div>
+          </div>
+          <div class="col-md-4 border border-dark shadow p-2">
+            <img src="media/image21.jpg" alt="" class="img-fluid" onclick="openModal('media/img (3).jpg')">
+            <div class="offre text-center mt-3">
+              <a href="pages/commande.html" class="btn btn-danger">Commander</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 fw-bold">
+          <div class="col-md-4 shadow border border-dark p-2">
+            <img src="media/image25.jpg" alt="" class="img-fluid" onclick="openModal('media/image25.jpg')">
+            <div class="offre text-center mt-3">
+              <a href="pages/commande.html" class="btn btn-danger">Commander</a>
+            </div>
+          </div>
+          <div class="col-md-4 shadow border border-dark p-2">
+            <img src="media/image (26).jpg" alt="" class="img-fluid" onclick="openModal('media/image (26).jpg')">
+            <div class="offre text-center mt-3">
+              <a href="pages/commande.html" class="btn btn-danger">Commander</a>
+            </div>
+          </div>
+          <div class="col-md-4 shadow border border-dark p-2">
+            <img src="media/image22.jpg" alt="" class="img-fluid" onclick="openModal('media/image22.jpg')">
+            <div class="offre text-center mt-3">
+              <a href="pages/commande.html" class="btn btn-danger">Commander</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 fw-bold">
+          <div class="col-md-4 shadow border border-dark p-2">
+            <img src="media/image18.jpg" alt="" class="img-fluid" onclick="openModal('media/image18.jpg')">
+            <div class="offre text-center mt-3">
+              <a href="pages/commande.html" class="btn btn-danger">Commander</a>
+            </div>
+          </div>
+          <div class="col-md-4 shadow border border-dark p-2">
+            <img src="media/img (1).jpg" alt="" class="img-fluid" onclick="openModal('media/img (1).jpg')">
+            <div class="offre text-center mt-3 ">
+              <a href="pages/commande.html" class="btn btn-danger">Commander</a>
+            </div>
+          </div>
+          <div class="col-md-4 shadow border border-dark p-2">
+            <img src="media/image (27).jpg" alt="" class="img-fluid" onclick="openModal('media/image (27).jpg')">
+            <div class="offre text-center mt-3">
+              <a href="pages/commande.html" class="btn btn-danger">Commander</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 fw-bold">
+          <div class="col-md-4 shadow border border-dark p-2">
+            <img src="media/img (4).jpg" alt="" class="img-fluid" onclick="openModal('media/img (4).jpg')">
+            <div class="offre text-center mt-3">
+              <a href="pages/commande.html" class="btn btn-danger">Commander</a>
+            </div>
+          </div>
+          <div class="col-md-4 shadow border border-dark p-2">
+            <img src="media/image (28).jpg" alt="" class="img-fluid" onclick="openModal('media/image (28).jpg')">
+            <div class="offre text-center mt-3 ">
+              <a href="pages/commande.html" class="btn btn-danger">Commander</a>
+            </div>
+          </div>
+          <div class="col-md-4 shadow border border-dark p-2">
+            <img src="media/image19.jpg" alt="" class="img-fluid" onclick="openModal('media/image19.jpg')">
+            <div class="offre text-center mt-3">
+              <a href="pages/commande.html" class="btn btn-danger">Commander</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="modalImage">
+        </div>
+      </div>
+    </section>
+
+    <section id="Services">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center text-danger mt-5">SERVICES</h1>
+          <div class="col-md-12 text-center mt-3">
+            <h3 class="">Bienvenue sur <span class="text-danger">SEN'IMMO</span>, le premier site d’annonces immobilières au Sénégal. </h3>
+            <p>L’objectif du site est simple : Faciliter la recherche immobilière au Sénégal grâce à une plateforme 100 % immobilier. 
+              Parcourez les annonces de professionnels de l’immobilier (agences immobilières, constructeurs, promoteurs…) dont l’activité est juridiquement encadrée, 
+              ainsi que de particuliers. Allez découvrir nos agences immobilières inscrites sur SEN'IMMO.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <h3 class="text-center">Quels avantages pour vous ?</h3>
+            <p> <span class="fs-5">-</span> Un site 100 % spécialisé dans l’immobilier au Sénégal.</p>
+            <p> <span class="fs-5">-</span>Une recherche immobilière fluide et rapide grâce à une plateforme de grande qualité.</p>
+            <p> <span class="fs-5">-</span>Une grande nombre d’annonces de tous types de biens immobiliers (villas, maisons, terrains, appartements, locaux commerciaux, programmes neufs…)  à la vente ou à la location dans tout le Sénégal. </p>
+            <p> <span class="fs-5">-</span>Une mise en relation direct avec des professionnels fiables et vérifiés par nos soins.</p>
+            <p> <span class="fs-5">-</span>Un magazine d’actualité et de conseil immobilier pour les professionnels et les particuliers.</p>
+            <p>Vous l’aurez compris, SEN'IMMO est la référence en immobilier au Sénégal. 
+              Que vous soyez à la recherche d’un appartement , d'une villa à louer ou à vendre, 
+              à Saint Louis , Dakar , Thies ou encore d’un terrain à acheter au Sénégal pour y construire la maison de vos rêves, 
+              SEN'IMMO est à vos côtés et vous accompagne ! Allez vite parcourir les infos.
+            </p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="text-danger">
+              <i class='bx bxs-truck'></i>
+            </div>
+            <h2 class="">Livraison partout au sénégal</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Suscipit quam cupiditate distinctio aperiam
+              recusandae aut dolor natus incidunt facere. Distinctio!
+            </p>
+
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="text-danger">
+              <i class='bx bxs-gift'></i>
+            </div>
+            <h2 class="">Des cadeaux offérent par la maison</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Suscipit quam cupiditate distinctio aperiam
+              recusandae aut dolor natus incidunt facere. Distinctio!
+            </p>
+
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="text-danger">
+              <i class='bx bx-time-five'></i>
+            </div>
+            <h2 class="">A votre disposition 24h/24 7j/7</h2>
+            <p>Les portes de SEN'IMMO restent ouvert 24h/24 & 7j/7 . 
+               On est toujours à votre disposition rien qu'a satisfaire vos besoins pour vous rendre heureux . 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#nouscontacter" class="btn btn-danger">Contactez Nous </a>
+      </div>
+    </section>
+
+    <section id="Information">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 text-center">
+            <h1 class="text-danger mt-5">Expert-Conseil en immobilier</h1>
+            <p>Au contraire d'une agence immobilière classique, nous vous proposons des biens avec des équipements
+              modernes qui correspondent a vos attentes. Nous sommes au service exclusif des acquéreurs.
+            </p>
+
+          </div>
+          <div class="col-md-2">
+
+          </div>
+          <div class="row text-center mt-5">
+            <div class="col-md-4">
+              <i class='bx bx-search-alt-2 text-danger'></i>
+              <h3>Recherche</h3>
+              <p>Grâce à notre réseau et nos partenaires, nous diffusons vos critères de recherche auprès de tous les
+                acteurs immobiliers. Nous réalisons également un scan continu du marché afin de vous dénicher les
+                meilleures opportunités.</p>
+            </div>
+            <div class="col-md-4">
+              <i class='bx bx-bullseye text-danger'></i>
+              <h3>Analyse</h3>
+              <p>Vous recevez un rapport, clair et détaillé, expertisant l’immeuble avec l’estimation précise de chaque
+                rénovation, une analyse de la situation, un détail du coût d’achat et un calcul de la rentabilité.</p>
+            </div>
+            <div class="col-md-4">
+              <i class='bx bx-pen text-danger'></i>
+              <h3>Négociation</h3>
+              <p>C’est dans votre intérêt que nous négocions, non seulement le prix mais également les conditions
+                d’achat (clauses suspensives, documents obligatoires, durée, etc). L’offre, validée par vos soins, est
+                directement remise au vendeur.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center mt-4">
+              <h1>Faites appel à nous !</h1>
+              <p>Il y a tant de raisons de faire appel à nous pour trouver le bien qui correspond à vos attentes !</p>
+              <button class="btn btn-danger">En savoir plus</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section id="nouscontacter">
+      <div class="container p-3 fst-italic">
+        <h1 class="text-center text-danger mt-4">Nous Contactez</h1>
+        <div class="row">
+          <div class="col-md-4 text-center ">
+            <div class="text-danger">
+              <i class='bx bxs-map'></i>
+            </div>
+            <h2 class="fs-4">Médina,Saint-Louis du Sénégal</h2>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="text-danger">
+              <i class='bx bx-phone'></i>
+            </div>
+            <h2 class="fs-4">88 855 13 13</h2>
+            <h2 class="fs-4">88 855 14 14</h2>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="text-danger">
+              <i class='bx bx-envelope'></i>
+            </div>
+            <h3 class="fs-4">SEN'IMMO@gmail.com</h3>
+          </div>
+
+        </div>
+        <div class="row mt-5 ">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <h6>Pour plus d'information renseigner ces champs et nous vous contacterons dans les plus brefs delais
+              merci.</h6>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+        <form id="monFormulaire">
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <div class="nom">
+                <label for="" class="form">Nom</label>
+                <input type="text" id="nom" class="form-control" required placeholder="Votre nom">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="prenom">
+                <label for="" class="form">Prenom</label>
+                <input type="text" id="prenom" class="form-control" required placeholder="Votre prenom">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="tel">
+                <label for="" class="form">Tel</label>
+                <input type="number" id="tel" class="form-control" required placeholder="Votre numéro">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="email">
+                <label for="" class="form">Email</label>
+                <input type="email" id="email" class="form-control" required placeholder="Votre email">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md 8">
+              <div class="textarea">
+                <label for=""></label>
+                <textarea name="" id="message" class="form-control" id="" cols="10" rows="5" required
+                  placeholder="Votre message"></textarea>
+              </div>
+
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <label for="" class="form"></label>
+              <a href="" class="btn btn-danger form-control fs-4">Envoyer</a>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+    <footer class="text-center p-1 fs-5 mt-5">
+      <p class="p-3 fst-italic">SEN'<span class="text-danger">IMMO</span> Tous droits réservès 2024 $</p>
+    </footer>
+
+  </main>
+
+
+  <script src="scripts/script.js"></script>
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
